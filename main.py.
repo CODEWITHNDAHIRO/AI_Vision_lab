@@ -1,0 +1,14 @@
+import cv2
+from processors.grayscale import convert_to_grayscale
+
+def run():
+    img = cv2.imread("input.jpg")
+    if img is None:
+        print("Error: Add an image named 'input.jpg' to this folder!")
+        return
+    result = convert_to_grayscale(img)
+    cv2.imwrite("output.jpg", result)
+    print("Success! Created output.jpg")
+
+if __name__ == "__main__":
+    run()
