@@ -1,14 +1,16 @@
 import cv2
 from processors.grayscale import convert_to_grayscale
-
+from processors.edge_detection import apply_canny_edge #previous PR
+from processors.face_detection import detect_faces # new PR
 def run():
     img = cv2.imread("input.jpg")
     if img is None:
         print("Error: Add an image named 'input.jpg' to this folder!")
         return
-    result = convert_to_grayscale(img)
+        #process faces 
+    result = detect_faces(img)
     cv2.imwrite("output.jpg", result)
-    print("Success! Created output.jpg")
+    print("Success! face detection complete.")
 
 if __name__ == "__main__":
     run()
