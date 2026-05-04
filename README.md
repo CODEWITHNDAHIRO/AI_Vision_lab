@@ -21,13 +21,15 @@ USAGE:
 3. The processed image will be saved as output.jpg
 
 PROJECT STRUCTURE:
- . main.py: Entry point of the application.
- . processors/: contains core logic for face_detection,edge_detection,and grayscale.
- . requirements.txt: List of necessary Python packaages (OpenCV,etc...)
+ a. main.py: Entry point of the application.
+ b. processors/: contains core logic for face_detection,edge_detection,and grayscale.
+ c. requirements.txt: List of necessary Python packaages (OpenCV,etc...)
 
 CONTRIBUTING:
-contributions are welcome! if you'd like help improve this lab,please feel free to:
+contributions are welcome! if you'd like help improve this lab,please feel free to
 1.Open an Issue to report bugs or suggest features
+
 2.Submit a pull Request with new vision processors or optimizations.
+
 3.Help increase the project's activity by contributing to documentation or code
  
